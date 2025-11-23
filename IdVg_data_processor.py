@@ -1,6 +1,11 @@
 """
 FET Data Processor Module
-Contains all functions for loading, merging, processing, and plotting FET measurement data.
+Functions: 
+    loading,
+    merging, 
+    processing, 
+    plotting FET measurement data.
+    *The plot is only for reference, for proper plotting please plot the processed_data using origin.
 """
 
 import pandas as pd
@@ -27,6 +32,7 @@ def extract_sweep_type(filename):
     """
     Extract sweep type ('n' or 'p') from filename.
     Looks for '_n_' or '_p_' after the device ID.
+    n for negative sweep (0~-10V), p for positive sweep (0~10V).
     Example: 'FD-2_c2_D3-1_n_comment.csv' -> 'n'
     """
     match = re.search(r'FD-\d+_c\d+_D\d+-\d+_([np])', filename)
@@ -40,6 +46,7 @@ def load_and_group_data(data_directory):
     Load all CSV files and group them by FET ID.
     Skips files starting with 'noConn' or 'Leak'.
     Groups multiple files (n and p sweeps) for each FET.
+    A summary report will be added to the input data directory.
     
     Args:
         data_directory: Path to folder containing CSV files
@@ -109,22 +116,6 @@ def load_and_group_data(data_directory):
             
         else:
             print(f"Warning: Could not extract FET ID from {filename}")
-    
-    # Print summary to console
-    print(f"\n{'='*50}")
-    print(f"Summary:")
-    print(f"  Working FETs: {len(fet_groups)} unique devices")
-    print(f"  Dead FETs skipped:")
-    print(f"    - No Connection (noConn): {noconn_count}")
-    print(f"    - Leakage (Leak): {leak_count}")
-    print(f"    - Total dead: {noconn_count + leak_count}")
-    print(f"\nWorking FET IDs and their measurements:")
-    for fet_id in sorted(fet_groups.keys()):
-        n_status = "✓" if fet_groups[fet_id]['n'] is not None else "✗"
-        p_status = "✓" if fet_groups[fet_id]['p'] is not None else "✗"
-        total_files = len(fet_groups[fet_id]['all'])
-        print(f"  {fet_id}: {total_files} file(s) [n:{n_status} p:{p_status}]")
-    print(f"{'='*50}\n")
     
     # Write summary to text file
     summary_file = data_dir / "loading_summary.txt"
