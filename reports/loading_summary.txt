@@ -1,0 +1,16 @@
+==================================================
+FET Data Loading Summary
+==================================================
+
+Total CSV files found: 0
+Working FETs loaded: 0 unique devices
+
+Dead FETs skipped:
+  - No Connection (noConn): 0
+  - Leakage (Leak): 0
+  - Total dead: 0
+
+==================================================
+Working FET Details:
+==================================================
+

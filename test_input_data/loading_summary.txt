@@ -1,0 +1,123 @@
+==================================================
+FET Data Loading Summary
+==================================================
+
+Total CSV files found: 25
+Working FETs loaded: 15 unique devices
+
+Dead FETs skipped:
+  - No Connection (noConn): 4
+  - Leakage (Leak): 4
+  - Total dead: 8
+
+==================================================
+Working FET Details:
+==================================================
+
+FET ID: FD-10_c4_D1-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D1-1_pre-dice [ 11_7_2025 12_36_17 PM].csv (sweep: p)
+
+FET ID: FD-10_c4_D1-2
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D1-2_pre-dice [ 11_7_2025 12_37_51 PM].csv (sweep: p)
+
+FET ID: FD-10_c4_D10-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D10-1_pre-dice [ 11_7_2025 12_29_57 PM].csv (sweep: p)
+
+FET ID: FD-10_c4_D10-2
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D10-2_pre-dice [ 11_7_2025 12_31_42 PM].csv (sweep: p)
+
+FET ID: FD-10_c4_D11-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D11-1_pre-dice [ 11_7_2025 12_33_04 PM].csv (sweep: p)
+
+FET ID: FD-10_c4_D11-2
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D11-2_pre-dice [ 11_7_2025 12_34_16 PM].csv (sweep: p)
+
+FET ID: FD-10_c4_D2-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D2-1_pre-dice [ 11_7_2025 11_37_47 AM].csv (sweep: p)
+
+FET ID: FD-10_c4_D2-2
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D2-2_pre-dice [ 11_7_2025 11_35_27 AM].csv (sweep: p)
+
+FET ID: FD-10_c4_D3-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D3-1_pre-dice [ 11_7_2025 11_33_52 AM].csv (sweep: p)
+
+FET ID: FD-10_c4_D5-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D5-1_pre-dice [ 11_7_2025 11_13_24 AM].csv (sweep: p)
+
+FET ID: FD-10_c4_D5-2
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D5-2_pre-dice [ 11_7_2025 11_10_32 AM].csv (sweep: p)
+
+FET ID: FD-10_c4_D7-2
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D7-2_pre-dice [ 11_7_2025 10_54_45 AM].csv (sweep: p)
+
+FET ID: FD-10_c4_D8-1
+  Total files: 1
+  Negative sweep: No
+  Positive sweep: Yes
+  Files:
+    - FD-10_c4_D8-1_pre-dice [ 11_7_2025 10_57_43 AM].csv (sweep: p)
+
+FET ID: FD-2_c2_D3-1
+  Total files: 2
+  Negative sweep: Yes
+  Positive sweep: Yes
+  Files:
+    - FD-2_c2_D3-1_n_350C30min [ 11_12_2025 2_57_36 PM].csv (sweep: n)
+    - FD-2_c2_D3-1_p_350C30min [ 11_12_2025 2_56_36 PM].csv (sweep: p)
+
+FET ID: FD-2_c2_D3-2
+  Total files: 2
+  Negative sweep: Yes
+  Positive sweep: Yes
+  Files:
+    - FD-2_c2_D3-2_n_350C30min [ 11_12_2025 2_28_56 PM].csv (sweep: n)
+    - FD-2_c2_D3-2_p_350C30min [ 11_12_2025 2_28_11 PM].csv (sweep: p)
+
