@@ -1,4 +1,4 @@
 plots/
 processed_data/
 myvenv/
-_pycache__/
+__pycache__/
