@@ -14,7 +14,7 @@ from IdVg_data_processor import (
 # Example usage
 if __name__ == "__main__":
     # Set your data directory path
-    data_directory = "./test_input_data"  # Change this to your folder path
+    data_directory = "./example_input_data"  # Change this to your folder path
     
     # Load and group data
     fet_data = load_and_group_data(data_directory)
